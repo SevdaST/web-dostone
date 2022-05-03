@@ -1,1 +1,83 @@
-ddhhdhddjh
+/*css dosyası*/
+.banner{
+    width:220px; height: 50px; padding-left: 0%;
+}
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  footer {
+    background-color:burlywood;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  /* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 200px;
+    height: 600px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  div{
+      background-color:#27ae60; border: 2px black solid;
+  }
+  #sergi{
+      width: 300px; height: 300px;
+  }
+
+  div.scrollmenu li{
+    float: left;
+    text-align: center;
+    
+}
+
+div.scrollmenu ul {
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #27ae60;
+
+    display: inline-block;
+
+    
+
+}
+
+div.scrollmenu a {
+    display: block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+    font-size: 30px;
+    
+    
+}
+
+
+div.scrollmenu a:hover:not(.active) {
+
+    background-color: #111;
+}
+
+
+.active {
+
+    background-color: #f39c12;
+}
