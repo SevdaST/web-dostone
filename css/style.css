@@ -28,7 +28,7 @@ nav {
       background-color:#27ae60; border: 2px black solid;
   }
   #sergi{
-      width: 300px; height: 300px;
+      width: 200px; height: 200px;
   }
 
   div.scrollmenu li{
@@ -81,3 +81,9 @@ div.scrollmenu a:hover:not(.active) {
 
     background-color: #f39c12;
 }
+ 
+  button {
+    width: 50%;
+    margin: 4px;
+    padding: 6px;
+  }
