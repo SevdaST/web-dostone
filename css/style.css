@@ -1,20 +1,18 @@
 /*css dosyası*/
-.banner{
-    width:220px; height: 50px; padding-left: 0%;
-}
+
 header {
     background-color: #666;
     padding: 30px;
     text-align: center;
-    font-size: 35px;
     color: white;
   }
   footer {
-    background-color:burlywood;
-    padding: 30px;
+    background-color:#666;
+    height: 50px;
     text-align: center;
-    font-size: 35px;
-    color: white;
+    color:white;
+    margin-bottom: 0%;
+    margin-top:50%;
   }
   /* Create two columns/boxes that floats next to each other */
 nav {
@@ -27,9 +25,7 @@ nav {
   div{
       background-color:#27ae60; border: 2px black solid;
   }
-  #sergi{
-      width: 200px; height: 200px;
-  }
+
 
   div.scrollmenu li{
     float: left;
@@ -77,13 +73,36 @@ div.scrollmenu a:hover:not(.active) {
 }
 
 
-.active {
-
-    background-color: #f39c12;
-}
  
-  button {
-    width: 50%;
-    margin: 4px;
-    padding: 6px;
-  }
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.container .btn:hover {
+  background-color: black;
+}
