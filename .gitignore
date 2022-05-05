@@ -1,7 +1,5 @@
 # jpg
-img/
-images/
+
 *.pptx
-*.jpg
-*.png
+
 #log
