@@ -1,13 +1,13 @@
 /*css dosyası*/
 
 header {
-    background-color: #666;
+    background-color:cadetblue;
     padding: 30px;
     text-align: center;
     color: white;
   }
   footer {
-    background-color:#666;
+    background-color:cadetblue;
     height: 50px;
     text-align: center;
     color:white;
@@ -23,67 +23,47 @@ nav {
     padding: 20px;
   }
   div{
-      background-color:#27ae60; border: 2px black solid;
+      background-color:grey; 
+      border: 2px black;
+   
   }
 
 
   div.scrollmenu li{
     float: left;
     text-align: center;
+    overflow: hidden;
     
 }
 
 div.scrollmenu ul {
     list-style-type: none;
-
     margin: 0;
-
     padding: 0;
-
     overflow: hidden;
-
-    background-color: #27ae60;
-
+    background-color:grey;
     display: inline-block;
-
-    
-
 }
 
 div.scrollmenu a {
     display: block;
-
     color: white;
-
     text-align: center;
-
     padding: 14px 16px;
-
     text-decoration: none;
-
-    font-size: 30px;
-    
-    
+    font-size: 30px;      
 }
 
 
 div.scrollmenu a:hover:not(.active) {
-
     background-color: #111;
 }
 
 
- 
-.container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  float: left;
-}
 
 .container img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .container .btn {
@@ -102,3 +82,4 @@ transform: translate(0%, -150%);
 .container .btn:hover {
   background-color: black;
 }
+
