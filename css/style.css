@@ -64,6 +64,7 @@ div.scrollmenu a:hover:not(.active) {
 .container img {
   width: 250px;
   height: 250px;
+  float: left;
 }
 
 .container .btn {
