@@ -6,81 +6,16 @@ header {
     text-align: center;
     color: white;
   }
-  footer {
-    background-color:cadetblue;
-    height: 50px;
-    text-align: center;
-    color:white;
-    margin-bottom: 0%;
-    margin-top:50%;
-  }
-  /* Create two columns/boxes that floats next to each other */
-nav {
-    float: left;
-    width: 200px;
-    height: 600px; /* only for demonstration, should be removed */
-    background: #ccc;
-    padding: 20px;
-  }
-  div{
-      background-color:grey; 
-      border: 2px black;
-   
-  }
 
 
-  div.scrollmenu li{
-    float: left;
-    text-align: center;
-    overflow: hidden;
-    
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
 }
 
-div.scrollmenu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:grey;
-    display: inline-block;
+.border{
+  border-width:2px;
+  border-color: black;
 }
-
-div.scrollmenu a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;      
-}
-
-
-div.scrollmenu a:hover:not(.active) {
-    background-color: #111;
-}
-
-
-
-.container img {
-  width: 250px;
-  height: 250px;
-  float: left;
-}
-
-.container .btn {
-transform: translate(0%, -150%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  
-}
-
-.container .btn:hover {
-  background-color: black;
-}
-
