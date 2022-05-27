@@ -84,6 +84,6 @@ function traverten()
 
         for (var i = 1; i <= 12; i++) {
           document.getElementById(urun[i]).style.display = "none";
-          //document.getElementById(urun[i]).style="visibility:hidden";
+          ////document.getElementById(urun[i]).style="visibility:hidden";
         } 
       }
