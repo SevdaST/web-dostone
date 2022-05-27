@@ -20,5 +20,16 @@ header {
   border-color: black;
 }
 #menu2{
-  background-color:red;
+  background-color:grey;
+}
+
+.kategori{
+  list-style-type: none;
+  font-size: 25px;
+  color: beige;
+  
+}
+
+.class .a{
+margin-top: 2;
 }

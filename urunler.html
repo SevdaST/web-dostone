@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/urunler.js" charset="utf-8"></script>
     <title>DoStone Marble</title>
     <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
 
@@ -26,98 +28,129 @@
                     <h2>dil seçimi olsun en-tr-arapça</h2>
                 </div>
         </header>
-        <div class="row">
-          <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav  fs-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ürünler</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hakkımızda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Bize Ulaşın</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="navbar">
+            <div class="logo">
+                <!-- <a href="#"><img src="./images/logo2.jpg" alt=""></a> -->
             </div>
-          </nav>
+            <ul>
+                <li><a class="active" href="index.html">Anasayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="aboutus.html">Hakkımızda </a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+
         </div><!-- navbar end -->
            <div class="row"><!--bu ksım menunun altında kalan 12 lik 
                                 ızgara 4 ü aside bar için 8 lik resim section ı için  
                                 olmak üzere iki parçaya bölündü -->
-            <aside class="col-sm-4 bg-danger"><!--ürün filtreleme kısmı-->
-                <ul class="fs-3"><!--Türe göre filtre--> 
-                    <h2 class="fw-bold fs-2">Taş Seçiniz</h2>
-                    <li>Traverten</li>
-                    <li>Onyx</li>
-                    <li>Granit</li>
+            <aside class="col-sm-3"><!--ürün filtreleme kısmı-->
+                <ul class="kategori"><!--Türe göre filtre--> 
+                    <h3 class="fw-bold fs-2 mt-5">Ürün Kategorisi</h3>
+                    <li><a id="granit" href="#" onclick="granit()">Granit</a></li>
+                    <li><a id="traverten" href="#" onclick="traverten()">Traverten</a></li>
+                    <li><a id="onyx" href="#" onclick="onyx()">Onyx</a></li>   
+                    <li><a id="beige" href="#" onclick="beige()">Beige Marble</a></li>
+                    <li><a id="emprador" href="#" onclick="emprador()">Emprador</a></li>
+                    <li><a id="grey" href="#" onclick="grey()">Grey Marble</a></li>
+                    <li><a id="mugla" href="#" onclick="mugla()">Muğla Beyaz</a></li>
+                    <li><a id="seramik" href="#" onclick="seramik()">Seramik</a></li>
                 </ul>
-                <ul class="fs-3"><!--renge göre filtre--> 
-                    <h2 class="fw-bold fs-2">Renk Seçiniz</h2>
-                    <li>Beyaz</li>
-                    <li>Gri</li>
-                    <li>Bej</li>
-                    <li>Krem</li>
-                    <li>Kahverengi</li>
-                </ul>
+                
             </aside>
-            <section class="col-sm-8 bg-secondary"><!--ürün fotoğraflarının gösterildiği kısım -->
+            <section class="col-sm-9 bg-secondary"><!--ürün fotoğraflarının gösterildiği kısım -->
                 <div class="row"><!--ürün fotoğrafları birinci satırı -->
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Afrodit</h5>
-                          <img class="w-100" src="images/afrodit.jpg">
+                    <div id="urun1" class="card" style="width:18rem; display:none">
+                        <div class="card-body ">
+                          <h5 id="card1title" class="card-title">Urun 1</h5>
+                          <img id="card1img" class="w-100" src="">
+                          <a id="te" href="#" class="card-link">Fiyat Teklifi Al</a>
+                        </div>
+                      </div>
+                      <div id="urun2" class="card" style=" width:18rem; display:none">
+                        <div class="card-body ">
+                          <h5 id="card2title" class="card-title">Urun 2</h5>
+                          <img id="card2img" class="w-100" src="">
                           <a href="#" class="card-link">Fiyat Teklifi Al</a>
                         </div>
                       </div>
-                      <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">calacata_extra</h5>
-                          <img class="w-100" src="images/calacata_extra.jpg">
-                          <a href="#" class="card-link">Fiyat Teklifi Al</a>
-                        </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">belvedere</h5>
-                          <img class="w-100" src="images/belvedere.jpg">
+                      <div id="urun3"class="card" style="width:18rem; display:none">
+                        <div class="card-body ">
+                          <h5 id="card3title" class="card-title">Urun 3</h5>
+                          <img  id="card3img" class="w-100" src="">
                           <a href="#" class="card-link">Fiyat Teklifi Al</a>
                         </div>
                       </div>
                 </div>
-                 <div class="row"><!--ürün fotoğrafları ikinci satırı -->
-                  <div class="card" style="width: 18rem;">
+                 <div  class="row"><!--ürün fotoğrafları ikinci satırı -->
+                  <div id="urun4" class="card" style="width:18rem; display:none">
                     <div class="card-body">
-                      <h5 class="card-title">empredor</h5>
-                      <img class="w-100" src="images/empredor.jpg">
+                      <h5 id="card4title" class="card-title">Urun 4</h5>
+                      <img id="card4img" class="w-100" src="">
                       <a href="#" class="card-link">Fiyat Teklifi Al</a>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div id="urun5" class="card" style="width:18rem; display:none">
                     <div class="card-body">
-                      <h5 class="card-title">blackdiamond</h5>
-                      <img class="w-100" src="images/blackdiamond.jpg">
+                      <h5 id="card5title" class="card-title">Urun 5</h5>
+                      <img id="card5img" class="w-100" src="">
                       <a href="#" class="card-link">Fiyat Teklifi Al</a>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
+                  <div id="urun6" class="card" style="width:18rem; display:none">
                     <div class="card-body">
-                      <h5 class="card-title">lilac</h5>
-                      <img class="w-100" src="images/lilac.jpg">
+                      <h5 id="card6title" class="card-title">Urun 6</h5>
+                      <img id="card6img" class="w-100" src="">
                       <a href="#" class="card-link">Fiyat Teklifi Al</a>
                     </div>
                   </div>
-            </div>
+                </div>
+                <div  class="row"><!--ürün fotoğrafları üçüncü satırı -->
+                  <div id="urun7" class="card" style="width:18rem; display:none">
+                    <div class="card-body">
+                      <h5 id="card7title" class="card-title">Urun 7</h5>
+                      <img id="card7img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                  <div id="urun8" class=" card" style="width:18rem; display:none">
+                    <div class="card-body">
+                      <h5 id="card8title" class="card-title">Urun 8</h5>
+                      <img id="card8img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                  <div id="urun9" class=" card" style="width:18rem; display:none">
+                    <div class="card-body">
+                      <h5 id="card9title" class="card-title">Urun 9</h5>
+                      <img id="card9img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                </div><!--üçüncü satır end-->
+                <div  class="row"><!--ürün fotoğrafları dördüncü satırı -->
+                  <div id="urun10" class="card" style="width:18rem; display:none">
+                    <div class="card-body">
+                      <h5 id="card10title" class="card-title">Urun 10</h5>
+                      <img id="card10img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                  <div id="urun11" class="card" style="width:18rem; display:none">
+                    <div class="card-body">
+                      <h5 id="card11title" class="card-title">Urun 11</h5>
+                      <img id="card11img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                  <div id="urun12" class="card" style="width:18rem;  display:none">
+                    <div class="card-body">
+                      <h5 id="card12title" class="card-title">Urun 12</h5>
+                      <img id="card12img" class="w-100" src="">
+                      <a href="#" class="card-link">Fiyat Teklifi Al</a>
+                    </div>
+                  </div>
+                </div>
                 </div>
             
             </section>
@@ -130,12 +163,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
