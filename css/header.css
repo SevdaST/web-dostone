@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: black;
+    background-size: 100% 100%; 
+    /*height: 100vh;*/
+}
+
+.container .navbar{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255,255,255,0.2)
+}
+
+.navbar ul{
+    float:right;
+    
+}
+
+.navbar .logo{
+    margin-left: 30px;
+    margin-top: 10px;
+    /* block neden olmuyor*/
+    /* inline yapınca neden sadece margin left çalışıyor*/
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar .logo a{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 60px;
+}
+.navbar ul li a{
+    color: white;
+    font-family:sans-serif;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    color: orange;
+    border-radius: 2px;
+}
+
+a img{
+    width: 43px;
+}

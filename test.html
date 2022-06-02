@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row" id="test"></div>
+  </div>
+  <script>
+    arr = [{
+        "Name": "Peter",
+        "Job": "Programmer"
+      },
+      {
+        "Name": "John",
+        "Job": "Programmer"
+      },
+      {
+        "Name": "Kevin",
+        "Job": "Scientist"
+      },
+    ];
+
+    $.each(arr, function(i) {
+      var templateString =
+        '<div class="col-sm-4 card mb-2 box-shadow">    <img class="card-img-top w-100" src="images/emprador/darkemprador.jpg" alt="Card image cap">      <div class="card-body p-0">  <h5>' +
+        arr[i].Name + '</h5> </p></div> </div>';
+      $('#test').append(templateString);
+    })
+  </script>
+</body>
+
+</html>
