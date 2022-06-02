@@ -7,75 +7,55 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>DoStone Marble</title>
     <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
 
   </head>
   <body>
-    <div class="main">
-    <div class="container"><!--container start. includes header and nav-->
-        <header class="row bg-secondary">
-                <div class="col-sm-3">
-                    <img class="w-100" src="images/logo2.jpg" alt="">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo2.jpg" alt=""></a>
                 </div>
-                <div class="col-sm-6 bg-info">
-                    <h2>Kaliteli Seçiminiz ...<strong>DoStone Marble</strong></h2>
-                    <h3><em>Doğal Taş Bizim İşimiz</em></h3>        
+                <ul>
+                    <li><a class="active" href="index.html">Anasayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="aboutus.html">Hakkımızda </a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        
+              <!--<div class="row bg-warning">carousel row start -->
+              <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/carousel_pic1.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/carousel_pic2.JPG" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/carousel_pic3.JPG" class="d-block w-100" alt="...">
+                   </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="col-sm-3 bg-primary">
-                    <h2>dil seçimi olsun en-tr-arapça</h2>
-                </div>
-        </header>
-        <nav class="row bg-warning">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link fw-bold fs-2" href="index.html">Ana Sayfa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold fs-2" href="aboutus.html">Hakkımızda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold fs-2" href="urunler.html">Ürünler</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold fs-2" href="iletisim.html">İletişim</a>
-                </li>
-              </ul>
-              <span class="border border-bottom"></span>
-        </nav>
-    </div><!--container end. includes header and nav-->
-    <div class="container mt-2"><!--container start. includes carousel-->
-        <div class="row bg-warning"><!-- carousel row start -->
-         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/carousel_pic1.JPG" width="13000px" height="500px" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/carousel_pic2.JPG" width="13000px" height="500px" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/carousel_pic3.JPG" width="13000px" height="500px" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div><!-- carousel row end ---------> 
-    </div><!--container end. includes carousel-->
-    <div class="container"><!-- pictures container start -->
+              </div><!--  </div>carousel row end --------->
+
+           
+   
+
         <div class="row"><!-- picture row start -->
                 <div class="col-sm-4 border bg-info">
                   <p>Lorem ipsum dolor sit amet.</p>
@@ -96,10 +76,10 @@
                   <p>Assumenda beatae saepe itaque facere.</p>
                 </div>
         </div><!--picture row end-->
-    </div><!--pictures container end -->-->
-    <div class="container footer-menu bg-dark text-light">
-              <div class="row">
-                    <div class="col-sm-3">
+    <!--pictures container end -->-->
+
+                 <div class="row footer-menu bg-dark text-light">
+                       <div class="col-sm-3">
                         <h6 class="accordion-click">Ürünler</h6>
                         <ul>
                           <li>Lorem, ipsum.</li>
@@ -107,8 +87,8 @@
                           <li>Nobis, minus!</li>
                           <li>Fuga, numquam.</li>
                         </ul>
-                    </div>
-                    <div class="col-sm-3">
+                        </div>
+                      <div class="col-sm-3">
                         <h6 class="accordion-click">Projeler</h6>
                           <ul>
                             <li>Lorem, ipsum.</li>
@@ -116,45 +96,27 @@
                             <li>Illo, explicabo.</li>
                             <li>Fugit, magni?</li>
                           </ul>
-                    </div>
+                      </div>
+                        <div class="col-sm-3">
+                            <h6 class="accordion-click">Kurumsal</h6>
+                            <ul>
+                              <li>Lorem, ipsum.</li>
+                              <li>Animi, culpa.</li>
+                              <li>Illo, explicabo.</li>
+                              <li>Fugit, magni?</li>
+                            </ul>  
+                        </div>
                     <div class="col-sm-3">
-                        <h6 class="accordion-click">Kurumsal</h6>
-                        <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Animi, culpa.</li>
-                          <li>Illo, explicabo.</li>
-                          <li>Fugit, magni?</li>
-                        </ul>  
+                      <h6 class="accordion-click">İletişim</h6>
+                      <ul>
+                        <li>Lorem, ipsum.</li>
+                        <li>Animi, culpa.</li>
+                        <li>Illo, explicabo.</li>
+                        <li>Fugit, magni?</li>
+                      </ul>
                     </div>
-                    <div class="col-sm-3">
-                  <h6 class="accordion-click">İletişim</h6>
-                  <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Animi, culpa.</li>
-                    <li>Illo, explicabo.</li>
-                    <li>Fugit, magni?</li>
-                  </ul>
-                    </div>
-              </div>
-    </div>    
-    <div class="container bg-warning">
-                <div class="row footer-credit">
-                   <h4>2022 © DoStone Mermer</lh4>
-                </div>
-    </div>
-    </div><!--main end-->             
-    
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </div><!-- Main sonu-1.div -->
+            
+                 </div>    
+        </div><!-- Main sonu-1.div -->
   </body>
 </html>
