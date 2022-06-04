@@ -15,32 +15,27 @@
 
   </head>
   <body>
-    <main class="container">
-        <header class="row bg-secondary">
-                <div class="col-sm-3">
-                    <img class="w-100" src="images/logo2.jpg" alt="">
-                </div>
-                <div id="menu2" class="col-sm-6 ">
-                    <h2>Kaliteli Seçiminiz ...<strong>DoStone Marble</strong></h2>
-                    <h3><em>Doğal Taş Bizim İşimiz</em></h3>        
-                </div>
-                <div class="col-sm-3 bg-primary">
-                    <h2>dil seçimi olsun en-tr-arapça</h2>
-                </div>
-        </header>
-
-          <div class="navbar">
-            <div class="logo">
-                <!-- <a href="#"><img src="./images/logo2.jpg" alt=""></a> -->
+  
+    <div class="row" style="height: 50px; background-color: black;">
+      <marquee  width = "50%" behavior="scroll" direction="right" Onmouseover="this.stop()" onmouseout="this.start()">
+        <p style="padding: top 3px;">   Kaliteli Mermer Bizim İşimiz DoStone   </p>
+       </marquee>
+      </div>
+      <div class="row" style="height: 60px; background-color: black;">
+       <img id="logo" src="images/logo2.jpg" alt="">
+      </div>
+  
+          <div class="row" style="background-color: black;">
+            <div id="menu" class="navbar">
+              <ul>
+                  <li><a class="active" href="index.html">Anasayfa</a></li>
+                  <li><a href="urunler.html">Ürünler</a></li>
+                  <li><a href="aboutus.html">Hakkımızda </a></li>
+                  <li><a href="iletisim.html">İletişim</a></li>
+              </ul>
             </div>
-            <ul>
-                <li><a class="active" href="index.html">Anasayfa</a></li>
-                <li><a href="urunler.html">Ürünler</a></li>
-                <li><a href="aboutus.html">Hakkımızda </a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-            </ul>
+          </div>
 
-        </div><!---- navbar end -->
            <div class="row"><!--bu ksım menunun altında kalan 12 lik 
                                 ızgara 4 ü aside bar için 8 lik resim section ı için  
                                 olmak üzere iki parçaya bölündü -->
@@ -55,8 +50,7 @@
                     <li><a id="grey" href="#" onclick="greymarble()">Grey Marble</a></li>
                     <li><a id="mugla" href="#" onclick="muglabeyaz()">Muğla Beyazı</a></li>
                     <li><a id="seramik" href="#" onclick="seramik()">Seramik</a></li>
-                </ul>
-                
+                </ul>              
             </aside>
             <section class="col-sm-9 bg-secondary"><!--ürün fotoğraflarının gösterildiği kısım -->
                 <div class="row"><!--ürün fotoğrafları birinci satırı -->
@@ -179,9 +173,16 @@
             
             </section>
         </div>
-        <footer class="row bg-info">
-            <h2>footer-----Kaliteli Seçiminiz ...<strong>DoStone Marble</strong></h2>
-        </footer>
+  
+        <div class="row footer-menu bg-dark text-light" style="height: 300px">
+          © 2022 DoStone - Tüm hakları saklıdır.
+          <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
+          <i class="fa fa-whatsapp" style="font-size:48px;color:green"></i>
+            </div>
+    
+         </div>    
+</div><!-- Main sonu-1.div -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </main>
   </body>
 </html>
