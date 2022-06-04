@@ -8,115 +8,70 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js" charset="utf-8"></script>
     <title>DoStone Marble</title>
     <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
-
+    
   </head>
   <body>
+    <div class="row" style="height: 50px; background-color: black;">
+    <marquee  width = "50%" behavior="scroll" direction="right" Onmouseover="this.stop()" onmouseout="this.start()">
+      <p style="padding: top 3px;">   Kaliteli Mermer Bizim İşimiz DoStone   </p>
+     </marquee>
+    </div>
+    <div class="row" style="height: 60px; background-color: black;">
+     <img id="logo" src="images/logo2.jpg" alt="">
+    </div>
 
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="#"><img src="./images/logo2.jpg" alt=""></a>
-                </div>
-                <ul>
-                    <li><a class="active" href="index.html">Anasayfa</a></li>
-                    <li><a href="urunler.html">Ürünler</a></li>
-                    <li><a href="aboutus.html">Hakkımızda </a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                </ul>
+        <div class="row" style="background-color: black;">
+          <div id="menu" class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">Anasayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="aboutus.html">Hakkımızda </a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- crousel -->
+        <div class="row" >
+        <div id="carouselExampleFade" style="height:500px;" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner" style="height:500px;">
+            <div class="carousel-item active" style="height:500px;">
+              <img src="images/carousel_pic1.JPG" class="d-block w-100" alt="...">
             </div>
-        
-              <!--<div class="row bg-warning">carousel row start -->
-              <div class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./images/carousel_pic1.JPG" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/carousel_pic2.JPG" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/carousel_pic3.JPG" class="d-block w-100" alt="...">
-                   </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div><!--  </div>carousel row end --------->
+            <div class="carousel-item">
+              <img src="images/carousel_pic2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel_pic3.JPG" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+          <!--  crousel --------->
+          
 
-           
-   
 
-        <div class="row"><!-- picture row start -->
-                <div class="col-sm-4 border bg-info">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Consequuntur officia dignissimos earum nesciunt!</p>
-                  <p>Reiciendis est modi neque cum.</p>
-                  <p>Iste minus expedita molestiae provident!</p>
-                </div>
-                <div class="col-sm-4 border bg-primary">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Repellendus perferendis fugiat quasi soluta.</p>
-                  <p>Totam id fugit non tenetur.</p>
-                  <p>Recusandae provident placeat repellendus labore!</p>
-                </div>
-                <div class="col-sm-4 border bg-secondary">
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Exercitationem ipsam eius nobis corporis!</p>
-                  <p>Ut optio consequatur a nisi.</p>
-                  <p>Assumenda beatae saepe itaque facere.</p>
-                </div>
-        </div><!--picture row end-->
-    <!--pictures container end -->-->
-
-                 <div class="row footer-menu bg-dark text-light">
-                       <div class="col-sm-3">
-                        <h6 class="accordion-click">Ürünler</h6>
-                        <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Inventore, quaerat.</li>
-                          <li>Nobis, minus!</li>
-                          <li>Fuga, numquam.</li>
-                        </ul>
-                        </div>
-                      <div class="col-sm-3">
-                        <h6 class="accordion-click">Projeler</h6>
-                          <ul>
-                            <li>Lorem, ipsum.</li>
-                            <li>Animi, culpa.</li>
-                            <li>Illo, explicabo.</li>
-                            <li>Fugit, magni?</li>
-                          </ul>
-                      </div>
-                        <div class="col-sm-3">
-                            <h6 class="accordion-click">Kurumsal</h6>
-                            <ul>
-                              <li>Lorem, ipsum.</li>
-                              <li>Animi, culpa.</li>
-                              <li>Illo, explicabo.</li>
-                              <li>Fugit, magni?</li>
-                            </ul>  
-                        </div>
-                    <div class="col-sm-3">
-                      <h6 class="accordion-click">İletişim</h6>
-                      <ul>
-                        <li>Lorem, ipsum.</li>
-                        <li>Animi, culpa.</li>
-                        <li>Illo, explicabo.</li>
-                        <li>Fugit, magni?</li>
-                      </ul>
+                 <div class="row footer-menu bg-dark text-light" style="height: 300px">
+                  © 2022 DoStone - Tüm hakları saklıdır.
+                  <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
+                  <i class="fa fa-whatsapp" style="font-size:48px;color:green"></i>
                     </div>
             
                  </div>    
         </div><!-- Main sonu-1.div -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
