@@ -15,12 +15,22 @@ header {
     min-height: 300px;
 }
 
+marquee{
+  margin-top: 10;
+  direction:"left"; 
+  width:"%70" ;
+  /* height:"100" ; */
+  background-color:black;
+  color: white;font-size: 20px;
+  padding-top: 3%;
+
+
+}
+
+
 .border{
   border-width:2px;
   border-color: black;
-}
-#menu2{
-  background-color:grey;
 }
 
 .kategori{
@@ -30,6 +40,13 @@ header {
   
 }
 
-/* .class .a{
-margin-top: 2;
-} */
+#logo{
+  width: 60px;
+  height: 60px;
+  align-content: flex-end;
+  justify-content:center ;
+  width: fit-content;
+  padding-left: 45%; 
+
+}
+
