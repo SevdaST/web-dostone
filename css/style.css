@@ -64,10 +64,6 @@ body{
   font-family: Arial, Helvetica, sans-serif
 }
 
-.form{
-  border: 2px solid black;
-  margin: 219px;
-}
 
 .float{
 position:fixed;
@@ -88,3 +84,10 @@ z-index:100;
 margin-top:16px;
 }
 
+#iletisim{
+  align-self: center;
+  margin-top: 25px; 
+  display:flexbox; 
+  align-items: center;
+  padding-left: 35%;
+}
