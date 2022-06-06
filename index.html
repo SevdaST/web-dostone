@@ -17,25 +17,27 @@
     
   </head>
   <body>
-    <div class="row" style="height: 50px; background-color: black;">
-    <marquee  width = "50%" behavior="scroll" direction="right" Onmouseover="this.stop()" onmouseout="this.start()">
-      <p style="padding: top 3px;">   Kaliteli Mermer Bizim İşimiz DoStone   </p>
-     </marquee>
+    <div class="topbar" style="position:relative;  height: 30px; background-color:black;"></div>
+    <div  class="topbar" style="position:relative;  height: 100px; background-color:white;">
+      <marquee  width = "100%" behavior="scroll" direction="right" Onmouseover="this.stop()" onmouseout="this.start()">
+        <p style="padding: top 3px;">   Kaliteli Mermer Bizim İşimiz DoStone   </p>
+       </marquee>
+       <img id="logo" src="images/stonelogo_son.JPG" alt="">
+       <!-- <i class="fa-solid fa-bars"></i> -->
+       <img id="logo2" src="images/hamburclose.JPG" alt="">
     </div>
-    <div class="row" style="height: 60px; background-color: black;">
-     <img id="logo" src="images/logo2.jpg" alt="">
-    </div>
+      <!-- </div> -->
 
-        <div class="row" style="background-color: black;">
-          <div id="menu" class="navbar">
-            <ul>
-                <li><a class="active" href="index.html">Anasayfa</a></li>
-                <li><a href="urunler.html">Ürünler</a></li>
-                <li><a href="aboutus.html">Hakkımızda </a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-            </ul>
+          <div class="row" style="background-color: black;">
+            <div id="menu" class="navbar" style="display: none;">
+              <ul>
+                  <li><a class="active" href="index.html">Anasayfa</a></li>
+                  <li><a href="urunler.html">Ürünler</a></li>
+                  <li><a href="aboutus.html">Hakkımızda </a></li>
+                  <li><a href="iletisim.html">İletişim</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
         <!-- crousel -->
         <div class="row" >
         <div id="carouselExampleFade" style="height:500px;" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -61,9 +63,7 @@
         </div>
       </div>
           <!--  crousel --------->
-          
-
-
+      
                  <div class="row footer-menu bg-dark text-light" style="height: 300px">
                   © 2022 DoStone - Tüm hakları saklıdır.
                   <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share via Whatsapp</a>
