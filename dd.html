@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+     
+    <!-- Including jQuery  -->
+    <script src=
+"https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous">
+   </script>
+    <style>
+        h2 {
+            color: #006600;
+        }
+  
+        button {
+            color: white;
+            background-color: #006600;
+            width: 100px;
+            height: 30px;
+        }
+  
+        body {
+            text-align: center;
+        }
+  
+        div {
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+  
+<body>
+  
+    <h2>GeeksforGeeks</h2>
+  
+    <button id="btn-left"> Move Left</button>
+    <button id="btn-right"> Move Right</button>
+    <button id="btn-top"> Move Top</button>
+    <button id="btn-bottom"> Move Bottom</button>
+  
+  
+    <div id="GFG_IMAGE">
+  
+        <!-- Image added using img tag with src attribute -->
+        <img src=
+"https://write.geeksforgeeks.org/static/media/Group%20210.08204759.svg" 
+         height='100px' width='100px'>
+        <img>
+    </div>
+  
+    <script>
+        $(document).ready(function(){
+            $("#stuff").on("click", "button", function(event){
+  alert($(this).id);
+});});
+    </script>
+  
+</body>
+  
+</html>
