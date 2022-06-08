@@ -1,3 +1,12 @@
+/*$(document).ready(function(){
+  $("#granit").mouseover(function(){
+    $(this).animate({fontSize: "50px" }, 800 ); });
+    $("#granit").click(function(){
+      $(this).animate({textalign: 'right' }, 800 ); });
+ 
+});*/
+
+// Filter starting****************
 function traverten()
       {
         allvisiblefalse();
@@ -173,8 +182,8 @@ function traverten()
         document.getElementById("card15img").src = "images/seramik/lourentgold.jpg";
 
       }
-
-      function allvisiblefalse()
+// Filter end****************
+      function allvisiblefalse() //makes all cards  unvisible 
       {
         var urun=[];
 

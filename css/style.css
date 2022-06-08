@@ -22,8 +22,9 @@ direction:"left";
 width:"%70" ;
 /* height:"100" ; */
 /* background-color:black; */
-color: black;font-size: 20px;
-padding-top: 3%;
+color: black;font-size: 30px;
+padding-bottom: 1%;
+padding-top: 1.5%;
 
 
 }
@@ -36,9 +37,27 @@ border-color: black;
 
 .kategori{
 list-style-type: none;
-font-size: 25px;
-color: beige;
+font-size: 40px;
+color:red;
+}
 
+.kategori li{
+  color: rgb(16, 145, 231);
+  font-size: 30px;
+} 
+
+.kategori li a:hover {
+  color: red;
+}
+
+
+
+.card-body a{
+  font-size: 20px;
+}
+
+.card-body a:hover, a:active {
+  text-decoration: underline;
 }
 
 #logo{
